@@ -1,0 +1,543 @@
+@import url('https://fonts.googleapis.com/css2?family=Nosifer&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+#particles-js {
+    position: absolute; 
+    width: 100%; 
+    height: 100%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #F2F4F7;
+    overflow-x: hidden;
+}
+
+.bg-light {
+    background-color: #F2F4F7 !important;
+}
+
+.active a {
+    color: #E43A19 !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #111F4D;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #E43A19;
+}
+
+.navbar-light .navbar-nav .nav-link:focus {
+    color: #E43A19;
+}
+
+.navbar-btn {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.navbar-btn:first-of-type {
+    border: 1px solid #E43A19;
+    color: #E43A19;
+    width: 136px;
+}
+
+.navbar-btn:last-of-type, .viewmore {
+    color: white;
+    background-color: #E43A19;
+    width: 104px;
+}
+
+.navbar-light .navbar-toggler-icon {
+background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(228, 58, 25)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+}
+
+.navbar-toggler {
+border: none;
+}
+
+.hero {
+    background-color: #111F4D;
+    color: white;
+    padding-top: 100px;
+    padding-bottom: 73px;
+    position: relative;
+}
+
+h4, .hero p{
+    font-weight: 300;
+}
+h2 {
+    font-weight: 600;
+}
+h4:last-of-type {
+    font-weight: 500;
+}
+
+.hero p:nth-of-type(2), .hero p:nth-of-type(3), .hero img{
+    display: none;
+}
+
+.container-fluid span {
+    font-weight: 600;
+}
+
+
+.service {
+    width: 337px;
+    height: 99px;
+    background: #F2F4F7;
+    box-shadow: 1px 2px 9px rgba(55, 20, 153, 0.1);
+    border-radius: 8px;
+    color: #111F4D;
+    padding: 20px 24px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.service p {
+    text-align: center;
+    font-weight: 300;
+}
+
+.service p span {
+    font-weight: 500;
+}
+
+.service svg {
+    align-self: center;
+    
+}
+
+.services {
+    margin: 32px 20px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.service {
+    margin-bottom: 16px;
+}
+
+
+
+#about, #projects, #clients, #testimonials {
+    margin: auto 17px 50px;
+}
+#contact , #skills {
+    margin-bottom: 50px;
+}
+
+#about hr, #skills hr, #projects hr, #clients hr, #testimonials hr, #contact hr {
+    width: 38px;
+    border: 1px solid #E43A19;
+    display: inline-block;
+    position: relative;
+    top: 10px;
+}
+
+#about h6, #skills h6, #projects h6, #clients h6, #testimonials h6, #contact h6{
+    display: inline-block;
+    color: #E43A19;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+#about h5, #skills h5, #projects h5, #clients h5, #testimonials h5, #contact h5 {
+    font-size: 18px;
+    color: #111F4D;
+}
+
+
+#about p, #skills p, #projects p, #clients p, #testimonials p, #contact p {
+    color: #020205;
+    font-size: 15px;
+}
+
+.rating {
+    idth: 339px;
+    mrgin: auto 18px;
+}
+
+.rating p {
+    margin-top: 24px;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #020205;
+}
+
+.progress {
+    height: 8px;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.progress-bar {
+    border-radius: 8px;
+    background-color: #E43A19;
+}
+
+.skillbox .item {
+    text-align: center;
+    padding: 40px;
+}
+.skillbox h6 {
+    margin-top: 20px;
+    font-weight: 600;
+    color: #111F4D;
+}
+.skillbox {
+    display: flex;
+    flex-wrap: wrap;
+  justify-content: center;
+}
+.item {
+    width: 237px;
+    height:194px;
+    background-color: #F2F4F7;
+    margin: 25px;
+    box-shadow: 1px 2px 4px rgba(25, 61, 115, 0.1);
+    border-radius: 8px;
+}
+
+.credits {
+    background-color: #111F4D;
+    color: #F2F4F7;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cred {
+    text-align: center;
+}
+
+.cred span {
+    display: block;
+    font-weight: 300;
+    margin-top: 15px;
+}
+
+/*slider container*/
+.container {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.hire {
+    background-color: #111F4D;
+    color: #F2F4F7;
+    padding: 61px 23px;
+    text-align: center;
+    margin-top: 50px;
+}
+.hire p {
+    font-size: 12px;
+}
+
+.testimonials .slide {
+    background-color: #111F4D;
+    border-radius: 8px;
+    color: white;
+    padding: 30px;
+}
+.testimonials .slide span {
+    color: #E43A19;
+    font-weight: 600;
+    font-size: 32px;
+    text-align: center;
+    display: block;
+}
+
+#contact svg {
+    margin-right: 16px;
+}
+
+.cntact {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.contactform {
+    width: 100%;
+    padding: 10px;
+    margin: auto 15px;
+}
+.inputstyle {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #ADADAD;
+    border-radius: 4px;
+    padding: 13px 16px;
+    margin-bottom: 10px;
+    background-color: transparent;
+}
+
+textarea {
+    width: 100%;
+    border: 1px solid #ADADAD;
+    border-radius: 4px;
+    padding: 13px 16px;
+    background-color: transparent;
+}
+
+footer {
+    background-color: #111F4D;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 24px;
+    font-size: 7px;
+}
+
+/*********MEDIA QUERY*********/
+
+@media screen and (min-width: 768px) {
+    #brand-icon {
+        margin-left: 140px;
+    }
+    .navbar-btn {
+        margin-right: 20px;
+    }
+    .nav-item {
+        margin-right: 30px;
+    }
+    .hero-intro  {
+        margin-left: 140px;
+        align-self: center;
+    }
+    .hero p:nth-of-type(1) {
+        margin-top: 24px;
+        width: 608px;
+    }
+    .hero p:nth-of-type(2) {
+        display: inline-block;
+        margin-right: 67px;
+    }
+    .hero p:nth-of-type(3) {
+        display: inline-block;
+    }
+    .hero-btn {
+        margin-top: 24px;
+        width: 104px;
+        height: 37px;
+    }
+    .hero img{
+        display: initial;
+    }
+    #navbarSupportedContent {
+        padding-right: 100px;
+    }
+    .hero {
+        padding-bottom: 0px;
+    
+    }
+    
+
+    .services {
+        margin: 32px 140px;
+        justify-content: space-between;
+    }
+    .about {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 60px 140px;
+    }
+    /*#skills,*/ #projects, #clients, #testimonials {
+        width: 449px;
+        align-self: center;
+        margin-left: 73px;
+    }
+    #about {
+        width: 449px;
+        align-self: center;
+        margin: 0;
+    }
+    #projects/*, clients`, testimonials`*/ {
+        margin-left: 140px;
+    }
+
+    #testimonials, #clients{
+        margin-left: 170px;
+    }
+    #skills, #contact {
+        margin-left: 0px;
+    }
+    #about h5, #skills h5, #projects h5, #clients h5, #testimonials h5, #contact h5 {
+        font-size: 32px;
+        color: #111F4D;
+        font-weight: bold;
+    }
+    .sectitle {
+        transform: rotate(-90deg);
+        position: absolute;
+        left: -70px;
+        top: 40px;
+    }
+    .testsectitle {
+        transform: rotate(-90deg);
+        position: relative;
+        left: -250px;
+        bottom: 95px;
+    }
+    .about-title {
+        transform: rotate(-90deg);
+        position: relative;
+        left: -250px;
+        bottom: 75px;
+    }
+    /*#skills .sectitle,*/ #projects .sectitle, #clients .sectitle, #testimonials .sectitle{
+        bottom: 90px;
+    }
+    .rating {
+        idth: 378px;
+        margin: 0px;
+    }
+    .talent {
+        margin: auto 140px 107px;
+        diplay: flex;
+        justify-content: space-between;
+    }
+    .skillbox {
+        align-self: center;
+    }
+    .item {
+        width: 237px;
+        height:194px;
+        background-color: #F2F4F7;
+        margin: 0px;
+        box-shadow: 1px 2px 4px rgba(25, 61, 115, 0.1);
+        border-radius: 8px;
+    }
+    .skillbox .item:nth-of-type(2) {
+        margin : 18px 0px 18px 18px;
+    }
+    .skillbox .item:nth-of-type(3) {
+        margin-top: -18px;
+    }
+    .skillbox .item:nth-of-type(4) {
+        margin-left : 18px;
+    }
+    .credits {
+        padding: 40px 200px;
+    }
+
+    .cred {
+        width: 100px;
+    }
+
+    .portfolio {
+        display: grid;
+        height: 675px;
+        margin-left: 140px;
+        margin-right: 140px;
+        grid-template-columns: repeat(3,auto-fit, minmax(237px,1fr));
+        grid-template-rows: repeat(3, 1fr);
+        column-gap: 26px;
+        row-gap: 11px;
+    }
+    .sample {
+        border-radius: 8px;
+    }
+    .sample:nth-of-type(1) {
+        grid-row: 1/2;
+    }
+    .sample:nth-of-type(2) {
+        grid-row: 1/3;
+    }
+    .sample:nth-of-type(4) {
+        grid-row: 2/4;
+    }
+    .sample:nth-of-type(6) {
+        grid-row: 2/4;
+    }
+    .hire {
+        background-color: #111F4D;
+        color: #F2F4F7;
+        padding: 106px;
+        text-align: center;
+    }
+    .hire h6 {
+        font-size: 32px;
+    
+    }
+    .hire p {
+        font-size: 16px;
+    }
+    
+    .contactform {
+        margin-top: 40px;
+    }
+
+    input[value="Send"] {
+        float: left;
+        mrgin-left: 10px;
+    }
+
+    #cotact {
+        width: 449px;
+        margin: 0;
+    }
+
+    footer {
+        padding: 23px;
+        margin-top: 120px;
+        font-size: 12px;
+    }
+    .wide, .slider {
+        margin: auto 140px;
+    }
+/*this targets the links..if img is targeted,
+ margin-right won't work for some reason...*/
+    .space a {
+        margin-bottom: 0.550vw;
+        margin-right: 1.3vw;
+     }
+     .gallery {
+        margin: auto 140px;        
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .portfolio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sample {
+        margin: 16px;
+    }
+
+    .about img {
+        width: 280px;
+        margin: auto;
+        display: block;
+    }
+
+    .navbar-collapse .navbar-btn:first-of-type, .navbar-collapse .navbar-btn:last-of-type {
+        width: 100%;
+    }
+    .gallery {
+        flex-wrap: wrap;
+        
+    }
+    .space img {
+        margin-bottom: 20px;
+        max-width: 330px;
+    }
+}
+
+/*newer styles*/
+.slick-dots {
+    margin-bottom: -10px !important;
+}
+
