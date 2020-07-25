@@ -56,7 +56,6 @@ var lightbox = new SimpleLightbox('.space a', { /* options */ });
 
 
 // View more button functionality
-//viewMoreBtn.addEventListener('click', view());
 
 function view() {
     let content = document.getElementsByClassName('moreBox')[0];
@@ -68,18 +67,6 @@ function view() {
         content.style.display = "none";
         viewMoreBtn.innerHTML = "View More";
     }
-}
-
-// Functionality for visited links
-const navLinks = document.getElementsByClassName('nav-item');
-
-for (let i = 0; i < navLinks.length; i++) {
-    navLinks[i].addEventListener('click', function (e) {
-        let currentLink = document.querySelector('.active');
-        currentLink.classList.toggle('active');
-        let clickedLink = e.target.parentNode;
-        clickedLink.classList.toggle('active');
-    })
 }
 
 
@@ -199,3 +186,18 @@ $(document).ready(function () {
         scale: 0.8
     });
 });
+
+// indicates the current section on scroll (makes the visited link functionality below obsolete)
+$('body').scrollspy({ target: '.navbar-nav' });
+
+/*// Functionality for visited links
+const navLinks = document.getElementsByClassName('nav-item');
+
+for (let i = 0; i < navLinks.length; i++) {
+    navLinks[i].addEventListener('click', function (e) {
+        let currentLink = document.querySelector('.active');
+        currentLink.classList.toggle('active');
+        let clickedLink = e.target.parentNode;
+        clickedLink.classList.toggle('active');
+    })
+}*/
