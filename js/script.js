@@ -1,5 +1,5 @@
 
-let viewMoreBtn = document.getElementById('loadMore');
+let viewMoreBtn = document.getElementById('show-more');
 
 
 // Slick slider initializer
@@ -29,7 +29,7 @@ $(document).ready(function () {
 
 // Slider initialiser for testimonials
 $(document).ready(function () {
-    $(' .testimonials').slick({
+    $('.testimonial-wrapper').slick({
         slidesToShow: 2,
         slidesToScroll: 1,
         autoplay: true,
@@ -94,56 +94,56 @@ $(document).ready(function () {
         opacity: 0,
         scale: 0.8
     });
-    sr.reveal('.about #about, .form-container', {
+    sr.reveal('.about__detail, .form-container', {
         duration: 1000,
         origin: 'right',
         distance: '200px',
         opacity: 0,
         scale: 0.8,
     });
-    sr.reveal('.skillbox .item:nth-of-type(1)', {
+    sr.reveal('.skill-box__item:nth-of-type(1)', {
         duration: 1000,
         origin: 'bottom',
         distance: '300px',
         opacity: 0,
         scale: 0.8
     });
-    sr.reveal('.skillbox .item:nth-of-type(2)', {
+    sr.reveal('.skill-box__item:nth-of-type(2)', {
         duration: 1500,
         origin: 'bottom',
         distance: '300px',
         opacity: 0,
         scale: 0.8
     });
-    sr.reveal('.skillbox .item:nth-of-type(3)', {
-        duration: 2000,
+    sr.reveal('.skill-box__item:nth-of-type(3)', {
+        duration: 1900,
         origin: 'bottom',
         distance: '300px',
         opacity: 0,
         scale: 0.8
     });
-    sr.reveal('.skillbox .item:nth-of-type(4)', {
-        duration: 2500,
+    sr.reveal('.skill-box__item:nth-of-type(4)', {
+        duration: 2200,
         origin: 'bottom',
         distance: '300px',
         opacity: 0,
         scale: 0.8
     });
-    sr.reveal('.rating', {
+    sr.reveal('.skills__rating', {
         duration: 1000,
         //origin: 'bottom',
         distance: '300px',
         opacity: 0,
         scale: 0.8
     });
-    sr.reveal('.cred:nth-of-type(1), .cred:nth-of-type(3)', {
+    sr.reveal('.credits-wrapper:nth-of-type(1), .credits-wrapper:nth-of-type(3)', {
         duration: 1000,
         origin: 'left',
         distance: '300px',
         opacity: 0,
         scale: 0.8
     });
-    sr.reveal('.cred:nth-of-type(2), .cred:nth-of-type(4)', {
+    sr.reveal('.credits-wrapper:nth-of-type(2), .credits-wrapper:nth-of-type(4)', {
         duration: 1000,
         origin: 'right',
         distance: '300px',
@@ -151,28 +151,28 @@ $(document).ready(function () {
         scale: 0.8
     });
 
-    sr.reveal('#projects, #clients, #testimonials, #contact, #skills', {
+    sr.reveal('.portfolio__detail, .client__detail, .testimonial__detail, .skills__detail, .contact__detail', {
         duration: 1000,
         origin: 'left',
         distance: '300px',
         opacity: 0,
         scale: 0.8
     });
-    sr.reveal('.gallery-animate, .customer-logos, .testimonials', {
+    sr.reveal('.gallery-animate, .customer-logos, .testimonial-wrapper', {
         duration: 1000,
         //origin: 'left',
         distance: '300px',
         opacity: 0,
         scale: 0.2
     });
-    sr.reveal('.sectitle, .testsectitle, .about-title', {
+    sr.reveal('.portfolio__title, .client__title, .testimonial__title, .about__title, .skills__title, .contact__title', {
         duration: 2500,
         origin: 'left',
         distance: '300px',
         opacity: 0,
         scale: 0.8
     });
-    sr.reveal('.viewmore, .navbar-btn', {
+    sr.reveal('.viewmore', {
         duration: 3000,
         //distance: '300px',
         opacity: 0,

@@ -4,6 +4,7 @@ html {
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
+
 #particles-js {
     position: absolute; 
     width: 100%; 
@@ -23,6 +24,10 @@ body {
 
 .navbar-light .navbar-nav .nav-link.active {
     color: #E43A19;
+}
+
+.navbar-nav .dropdown-menu {
+    margin-bottom: 10px;
 }
 
 .active a {
@@ -78,14 +83,18 @@ body {
 h4, .hero p{
     font-weight: 300;
 }
+
 h2 {
     font-weight: 600;
 }
+
 h4:last-of-type {
     font-weight: 500;
 }
 
-.hero p:nth-of-type(2), .hero p:nth-of-type(3), .hero img{
+.hero p:nth-of-type(2),
+ .hero p:nth-of-type(3),
+  .hero img{
     display: none;
 }
 
@@ -130,14 +139,24 @@ h4:last-of-type {
     margin-bottom: 16px;
 }
 
-#about, #projects, #clients, #testimonials {
+.about__detail,
+ .portfolio__detail,
+  .client__detail,
+   .testimonial__detail {
     margin: auto 17px 50px;
 }
-#contact , #skills {
+
+.contact__detail,
+ .skills__detail {
     margin-bottom: 50px;
 }
 
-#about hr, #skills hr, #projects hr, #clients hr, #testimonials hr, #contact hr {
+.about__detail hr,
+ .skills__detail hr,
+  .portfolio__detail hr,
+   .client__detail hr,
+    .testimonial__detail hr,
+     .contact__detail hr {
     width: 38px;
     border: 1px solid #E43A19;
     display: inline-block;
@@ -145,25 +164,39 @@ h4:last-of-type {
     top: 10px;
 }
 
-#about h6, #skills h6, #projects h6, #clients h6, #testimonials h6, #contact h6{
+.about__detail h6,
+ .skills__detail h6,
+  .portfolio__detail h6,
+   .client__detail h6,
+    .testimonial__detail h6,
+     .contact__detail h6 {
     display: inline-block;
     color: #E43A19;
     font-weight: 300;
     font-size: 16px;
 }
 
-#about h5, #skills h5, #projects h5, #clients h5, #testimonials h5, #contact h5 {
+.about__detail h5,
+ .skills__detail h5,
+  .portfolio__detail h5,
+   .client__detail h5,
+    .testimonial__detail h5,
+     .contact__detail h5 {
     font-size: 18px;
     color: #111F4D;
 }
 
-
-#about p, #skills p, #projects p, #clients p, #testimonials p, #contact p {
+.about__detail p,
+ .skills__detail p,
+  .portfolio__detail p,
+   .client__detail p,
+    .testimonial__detail p,
+     .contact__detail p {
     color: #020205;
     font-size: 15px;
 }
 
-.rating p {
+.skills__rating p {
     margin-top: 24px;
     margin-bottom: 8px;
     font-weight: 500;
@@ -180,27 +213,26 @@ h4:last-of-type {
     background-color: #E43A19;
 }
 
-.skillbox .item {
-    text-align: center;
-    padding: 40px;
-}
-.skillbox h6 {
+.skill-box h6 {
     margin-top: 20px;
     font-weight: 600;
     color: #111F4D;
 }
-.skillbox {
+
+.skill-box {
     display: flex;
     flex-wrap: wrap;
   justify-content: center;
 }
-.item {
+
+.skill-box__item {
     width: 237px;
     height:194px;
     background-color: #F2F4F7;
     margin: 25px;
     box-shadow: 1px 2px 4px rgba(25, 61, 115, 0.1);
-    border-radius: 8px;
+    border-radius: 8px;text-align: center;
+    padding: 40px;
 }
 
 .credits {
@@ -211,11 +243,11 @@ h4:last-of-type {
     justify-content: center;
 }
 
-.cred {
+.credits-wrapper {
     text-align: center;
 }
 
-.cred span {
+.credits-wrapper span {
     display: block;
     font-weight: 300;
     margin-top: 15px;
@@ -234,17 +266,19 @@ h4:last-of-type {
     text-align: center;
     margin-top: 50px;
 }
+
 .hire p {
     font-size: 12px;
 }
 
-.testimonials .slide {
+.testimonial-wrapper .slide {
     background-color: #111F4D;
     border-radius: 8px;
     color: white;
     padding: 30px;
 }
-.testimonials .slide span {
+
+.slide span {
     color: #E43A19;
     font-weight: 600;
     font-size: 32px;
@@ -252,15 +286,19 @@ h4:last-of-type {
     display: block;
 }
 
-#contact svg {
+.contact__detail svg {
     margin-right: 16px;
 }
+
 .contactform {
     width: 100%;
     padding: 10px;
     margin: auto 15px;
 }
-.inputstyle {
+
+.form-container__textinput,
+ .form-container__emailinput,
+  .form-container__phoneinput {
     width: 100%;
     height: 50px;
     border: 1px solid #ADADAD;
@@ -293,102 +331,137 @@ footer {
     #brand-icon {
         margin-left: 140px;
     }
+
     .navbar-btn {
         margin-right: 20px;
     }
+
     .nav-item {
         margin-right: 30px;
     }
+
     .hero-intro  {
         margin-left: 140px;
         align-self: center;
     }
+
     .hero p:nth-of-type(1) {
         margin-top: 24px;
         width: 608px;
     }
+
     .hero p:nth-of-type(2) {
         display: inline-block;
         margin-right: 67px;
     }
+
     .hero p:nth-of-type(3) {
         display: inline-block;
     }
+
     .hero-btn {
         margin-top: 24px;
         width: 104px;
         height: 37px;
     }
+
     .hero img{
         display: initial;
     }
+
     #navbarSupportedContent {
         padding-right: 100px;
     }
+
     .hero {
         padding-bottom: 0px;
     }
+
     .services {
         margin: 32px 140px;
         justify-content: space-between;
     }
+
     .about {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         margin: 60px 140px;
     }
-    #projects, #clients, #testimonials {
+
+    .portfolio__detail,
+     .client__detail,
+      .testimonial__detail {
         width: 449px;
         align-self: center;
         margin-left: 73px;
     }
-    #about {
+
+    .about__detail {
         width: 449px;
         align-self: center;
         margin: 0;
     }
-    #projects {
+
+    .portfolio__detail {
         margin-left: 140px;
     }
 
-    #testimonials, #clients{
+    .testimonial__detail,
+     .client__detail{
         margin-left: 170px;
     }
-    #skills, #contact {
+
+    .skills__detail,
+     .contact__detail {
         margin-left: 0px;
     }
-    #about h5, #skills h5, #projects h5, #clients h5, #testimonials h5, #contact h5 {
+
+    .about__detail h5,
+     .skills__detail h5,
+      .portfolio__detail h5,
+       .client__detail h5,
+        .testimonial__detail h5,
+         .contact__detail h5 {
         font-size: 32px;
         color: #111F4D;
         font-weight: bold;
     }
-    .sectitle {
+
+    .skills__title,
+     .contact__title {
         transform: rotate(-90deg);
         position: absolute;
         left: -70px;
         top: 40px;
     }
-    .testsectitle {
+
+    .portfolio__title,
+     .client__title,
+      .testimonial__title {
         transform: rotate(-90deg);
         position: relative;
         left: -250px;
         bottom: 95px;
     }
-    .about-title {
+
+    .about__title {
         transform: rotate(-90deg);
         position: relative;
         left: -250px;
         bottom: 75px;
     }
-    .talent {
+
+    .skills-wrapper {
         margin: auto 140px 107px;
         justify-content: space-between;
     }
-    .skillbox {
+
+    .skill-box {
         align-self: center;
     }
-    .item {
+
+    .skill-box__item {
         width: 237px;
         height:194px;
         background-color: #F2F4F7;
@@ -396,32 +469,39 @@ footer {
         box-shadow: 1px 2px 4px rgba(25, 61, 115, 0.1);
         border-radius: 8px;
     }
-    .skillbox .item:nth-of-type(2) {
+
+    .skill-box__item:nth-of-type(2) {
         margin : 18px 0px 18px 18px;
     }
-    .skillbox .item:nth-of-type(3) {
+
+    .skill-box__item:nth-of-type(3) {
         margin-top: -18px;
     }
-    .skillbox .item:nth-of-type(4) {
+
+    .skill-box__item:nth-of-type(4) {
         margin-left : 18px;
     }
+
     .credits {
         padding: 40px 200px;
     }
 
-    .cred {
+    .credits-wrapper {
         width: 100px;
     }
+    
     .hire {
         background-color: #111F4D;
         color: #F2F4F7;
         padding: 106px;
         text-align: center;
     }
+
     .hire h6 {
         font-size: 32px;
     
     }
+
     .hire p {
         font-size: 16px;
     }
@@ -439,15 +519,20 @@ footer {
         margin-top: 120px;
         font-size: 12px;
     }
-    .wide, .slider {
+
+    .testimonial-slider--wide,
+     .slider,
+      .contact--wide {
         margin: auto 140px;
     }
+
 /*this targets the links...if img is targeted,
  margin-right won't work for some reason...*/
     .space a {
         margin-bottom: 0.550vw;
         margin-right: 1.3vw;
      }
+
      .gallery {
         margin: auto 140px;        
     }
@@ -461,13 +546,16 @@ footer {
         display: block;
     }
 
-    .navbar-collapse .navbar-btn:first-of-type, .navbar-collapse .navbar-btn:last-of-type {
+    .navbar-collapse .navbar-btn:first-of-type,
+        .navbar-collapse .navbar-btn:last-of-type {
         width: 100%;
     }
+
     .gallery {
         flex-wrap: wrap;
         
     }
+
     .space img {
         margin-bottom: 20px;
         max-width: 330px;
